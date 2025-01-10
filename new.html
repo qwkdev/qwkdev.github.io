@@ -8,15 +8,6 @@
 			--header-height: 30vh;
 		} */
 
-		@media (max-width: 600px) {
-			:root {
-				--pad: 15vw;
-				--header-height: 10vh;
-				--columns: 1;
-			}
-			button.link p { display: none; }
-			button.link svg { display: block; }
-		}
 		@media (min-width: 600px) {
 			:root {
 				--pad: 10vw;
@@ -61,6 +52,15 @@
 			}
 			button.link p { display: block; }
 			button.link svg { display: none; }
+		}
+		@media (max-width: 600px), (aspect-ratio < 1/1) {
+			:root {
+				--pad: 15vw;
+				--header-height: 10vh;
+				--columns: 1;
+			}
+			button.link p { display: none; }
+			button.link svg { display: block; }
 		}
 
 		body {
